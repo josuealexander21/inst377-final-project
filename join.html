@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandmate — Join</title>
+    <link rel="stylesheet" href="join-page.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">BANDMATE</div>
+      <div class="nav-links">
+        <a href="final-project-home.html">Home</a>
+        <a href="join.html"class="active">Join</a>
+        <a href="musicians.html">Musicians</a>
+        <a href="events.html">Events</a>
+        <a href="join.html"><button class="btn-join">Join Free</button></a>
+      </div>
+    </nav>
+    </nav>
+
+    <div class="join-wrapper">
+      <div class="join-form">
+        <h1>Join Bandmate</h1>
+        <p>
+          Fill out your profile below. You'll appear in the Musicians directory
+          so other local players can find you.
+        </p>
+
+        <img class= "band-pic" src="https://images.stockcake.com/public/b/0/4/b0418dc7-bb6b-4c2d-924d-0ad25a9b725e_large/live-band-silhouette-stockcake.jpg">
+
+
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="e.g. Maya Rivera"
+            oninput="updatePreview()"
+          />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Primary Instrument *</label>
+            <select id="instrument" onchange="updatePreview()">
+              <option value="">Select...</option>
+              <option>Guitar</option>
+              <option>Bass</option>
+              <option>Drums</option>
+              <option>Vocals</option>
+              <option>Keys</option>
+              <option>Violin</option>
+              <option>Saxophone</option>
+              <option>Trumpet</option>
+              <option>DJ / Producer</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Years of Experience</label>
+            <input
+              type="number"
+              id="experience"
+              placeholder="e.g. 5"
+              min="0"
+              max="60"
+              oninput="updatePreview()"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Genres</label>
+          <input
+            type="text"
+            id="genres"
+            placeholder="e.g. Indie Rock, Jazz, Hip-Hop"
+            oninput="updatePreview()"
+          />
+          <span class="form-hint">Separate with commas</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>City *</label>
+            <input
+              type="text"
+              id="city"
+              placeholder="e.g. Baltimore"
+              oninput="updatePreview()"
+            />
+          </div>
+          <div class="form-group">
+            <label>State</label>
+            <input
+              type="text"
+              id="state"
+              placeholder="e.g. MD"
+              oninput="updatePreview()"
+              maxlength="2"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Short Bio</label>
+          <textarea
+            id="bio"
+            placeholder="Tell other musicians about your style, influences, and what kind of band you're looking for...Include your social media handles to connect!"
+            oninput="updatePreview()"
+          ></textarea>
+          <span class="form-hint">Optional but helps you get noticed</span>
+        </div>
+
+        <button class="btn-submit" id="submit-btn" onclick="submitProfile()">
+          Create My Profile
+        </button>
+
+        <div class="form-error" id="form-error"></div>
+
+        <div class="form-success" id="form-success">
+          ✓ You're in! Your profile is now live in the
+          <a href="musicians.html">Musicians directory</a>. Go find your bandmates!
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src = "join.js"></script>
+  </body>
+</html>

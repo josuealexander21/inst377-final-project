@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandmate — Events</title>
+    <link rel="stylesheet" href="events.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">BANDMATE</div>
+      <div class="nav-links">
+        <a href="final-project-home.html">Home</a>
+        <a href="join.html">Join</a>
+        <a href="musicians.html">Musicians</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="join.html"><button class="btn-join">Join Free</button></a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="section-header">
+        <h2>Local Events</h2>
+        <span class="api-label">via Bandsintown API</span>
+      </div>
+
+      <!-- Search bar -->
+      <div class="events-search">
+        <input
+          type="text"
+          id="artist-input"
+          placeholder="Search an artist (e.g. Tame Impala)"
+        />
+        <button onclick="loadEvents()">Search</button>
+      </div>
+
+      <!-- Status message (loading / errors) -->
+      <p id="events-status" class="events-status"></p>
+
+      <!-- Events get injected here -->
+      <div id="events-list"></div>
+    </main>
+
+    <script src="events.js"></script>
+  </body>
+</html>

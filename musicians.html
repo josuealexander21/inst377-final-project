@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandmate — Find Your Sound Tribe</title>
+    <link rel="stylesheet" href="home-page.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">BANDMATE</div>
+      <div class="nav-links">
+        <a href="final-project-home.html">Home</a>
+        <a href="join.html">Join</a>
+        <a href="musicians.html" class="active">Musicians</a>
+        <a href="events.html">Events</a>
+        <a href="join.html"><button class="btn-join">Join Free</button></a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="page-hero">
+        <h1>Musicians</h1>
+        <!-- musician count gets filled in by JS -->
+        <p>
+          Real people. Real instruments.
+          <span id="count-label">Loading...</span>
+        </p>
+      </div>
+
+      <br />
+
+      <!-- filter buttons -->
+      <div class="filter-bar" id="filter-bar"></div>
+
+      <!-- loading message -->
+      <p id="musicians-status" class="events-status">Loading musicians...</p>
+
+      <!-- cards filled here by JS -->
+      <div class="musicians-grid" id="musicians-grid"></div>
+    </main>
+
+  <!-- firebase used for API -->
+    <script type="module" src="musicians.js"></script>
+  </body>
+</html>
