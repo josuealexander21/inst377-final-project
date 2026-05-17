@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "Josue Diaz Lozano",
   "type": "commonjs",
-  "main": "events.js",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon -e '*'",
     "test": "echo \"Error: no test specified\" && exit 1"
