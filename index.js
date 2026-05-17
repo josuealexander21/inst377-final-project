@@ -10,6 +10,9 @@ dotenv.config();
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/final-project-home.html');
+});
 
 
 const supabaseUrl = process.env.SUPABASE_URL;
