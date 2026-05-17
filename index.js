@@ -1,8 +1,10 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const supabaseClient = require('@supabase/supabase-js');
-const { isValidStateAbbreviation } = require('usa-state-validator');
-const dotenv = require('dotenv');
+import express from 'express';
+import bodyParser from 'body-parser';
+import * as supabaseClient from '@supabase/supabase-js';
+import { isValidStateAbbreviation } from 'usa-state-validator';
+import dotenv from 'dotenv';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const port = 3000;
