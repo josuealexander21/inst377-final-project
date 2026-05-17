@@ -3,6 +3,8 @@ import bodyParser from 'body-parser';
 import * as supabaseClient from '@supabase/supabase-js';
 import { isValidStateAbbreviation } from 'usa-state-validator';
 import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
