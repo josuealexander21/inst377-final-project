@@ -87,7 +87,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebas
             "state",
             "bio",
           ].forEach((id) => (document.getElementById(id).value = ""));
-          updatePreview(); // reset the preview card too
         } catch (err) {
           // re-enable button so they can try again
           btn.disabled = false;
