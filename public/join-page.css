@@ -177,8 +177,8 @@
   .btn-submit:hover:not(:disabled) { background: #c42020; }
   
   .btn-submit:disabled {
-    background: #2a2a2a;
-    color: #555;
+    background: #3a1a1a;
+    cursor: not-allowed;
   }
   
   .form-success {
