@@ -9,12 +9,12 @@ async function loadEvents() {
   const list = document.getElementById('events-list');
   const status = document.getElementById('events-status');
 
-  // If no events page elements exist, stop here
+  // ff no events page elements exist, stop here
   if (!list) return;
 
   const artistName = input.value.trim();
 
-  // Don't run if the search box is empty
+  // don't run if the search box is empty
   if (!artistName) {
     status.textContent = 'Please enter an artist name.';
     return;
