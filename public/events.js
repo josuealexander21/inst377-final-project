@@ -9,7 +9,7 @@ async function loadEvents() {
   const list = document.getElementById('events-list');
   const status = document.getElementById('events-status');
 
-  // ff no events page elements exist, stop here
+  // if no events page elements exist, stop here
   if (!list) return;
 
   const artistName = input.value.trim();
